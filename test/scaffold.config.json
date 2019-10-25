@@ -1,0 +1,21 @@
+[
+    {
+        "dest": "./src/",
+        "friendlyName": "Test",
+        "nameCase": "pascal",
+        "structure": [
+            {
+                "type": "file",
+                "name": "index",
+                "extension": "js",
+                "content": "const test = require('./script_%name.pascal%_test');"
+            }, {
+                "type": "file",
+                "prefix": "script_",
+                "suffix": "_test",
+                "extension": "js",
+                "content": "console.log('Hello world!')"
+            }
+        ]
+    }
+]

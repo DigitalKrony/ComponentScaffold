@@ -1,0 +1,14 @@
+[
+    {
+        "dest": "./src/components/",
+        "friendlyName": "Component",
+        "structure": [
+            {
+                "type": "file",
+                "name": "index",
+                "extension": "js",
+                "content": ""
+            }
+        ]
+    }
+]

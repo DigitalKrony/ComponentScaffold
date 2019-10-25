@@ -1,0 +1,32 @@
+{
+    "name": "component_scaffold",
+    "description": "",
+    "keywords": "",
+    "author": {
+        "name": "Adam Sivins",
+        "email": "adam@funedikly.com",
+        "url": "http://funedikly.com"
+    },
+    "version": "0.5.0-beta",
+    "main": "./lib/index.js",
+    "license": "MIT",
+    "readmeFilename": "README.md",
+    "repository": {
+        "type": "git",
+        "url": "https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold"
+    },
+    "scripts": {
+        "start": "node index.js"
+    },
+    "dependencies": {
+        "chalk": "^2.4.2",
+        "glob": "^7.1.4",
+        "inquirer": "^6.3.1"
+    },
+    "directories": {
+        "bin": "./bin"
+    },
+    "bin": {
+        "scaffold": "./bin/cli.js"
+    }
+}
