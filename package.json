@@ -1,6 +1,7 @@
 {
     "name": "component_scaffold",
     "description": "Will build a folder and file structure that fits your requirements.",
+    "version": "0.6.0",
     "keywords": [
         "scaffold",
         "cli",
@@ -18,7 +19,6 @@
         "name": "DigitalKrony",
         "email": "chiefspork@gmail.com"
     },
-    "version": "0.5.1",
     "main": "./lib/index.js",
     "license": "MIT",
     "readmeFilename": "readme.md",
