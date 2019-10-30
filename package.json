@@ -32,8 +32,9 @@
     },
     "dependencies": {
         "chalk": "^2.4.2",
-        "glob": "^7.1.4",
-        "inquirer": "^6.3.1"
+        "glob": "^7.1.5",
+        "inquirer": "^6.3.1",
+        "js-yaml": "^3.13.1"
     },
     "directories": {
         "bin": "./bin"

@@ -1,0 +1,1 @@
+const test = require('./script_Foo_test');

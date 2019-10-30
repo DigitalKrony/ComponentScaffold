@@ -1,0 +1,1 @@
+const test = require('./script_Bar_test');
