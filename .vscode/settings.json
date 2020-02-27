@@ -1,0 +1,38 @@
+{
+  "files.trimTrailingWhitespace": true,
+  "search.exclude": {
+    "out": true,
+    "node_modules": true
+  },
+  "tslint.autoFixOnSave": true,
+  "tslint.nodePath": "packages/studio-build/node_modules/",
+  "typescript.preferences.quoteStyle": "single",
+  "typescript.tsdk": "packages/studio-build/node_modules/typescript/lib/",
+  "[typescript]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [120]
+    // Disabling this while this GitHub issue is open
+    // https://github.com/Microsoft/TypeScript/issues/22991
+    // "editor.codeActionsOnSave": {
+    //     "source.organizeImports": true
+    // }
+  },
+  "[typescriptreact]": {
+    "editor.detectIndentation": false,
+    "editor.insertSpaces": true,
+    "editor.formatOnSave": true,
+    "editor.rulers": [120]
+    // Disabling this while this GitHub issue is open
+    // https://github.com/Microsoft/TypeScript/issues/22991
+    // "editor.codeActionsOnSave": {
+    //     "source.organizeImports": true
+    // }
+  },
+  "jest.pathToConfig": "./jest.config.json",
+  "jest.pathToJest": "common/temp/node_modules/.bin/jest",
+  "editor.tabSize": 2,
+  "cSpell.words": [
+  ]
+}

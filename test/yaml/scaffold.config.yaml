@@ -1,7 +1,7 @@
 - dest: ./src/
   friendlyName: Test
   nameCase: pascal
-  structure: 
+  structure:
     - type: file
       name: index
       extension: js
