@@ -1,45 +1,46 @@
 {
-    "name": "component_scaffold",
-    "description": "Will build a folder and file structure that fits your requirements.",
-    "version": "0.6.0",
-    "keywords": [
-        "scaffold",
-        "cli",
-        "react",
-        "angular",
-        "vue",
-        "javascript"
-    ],
-    "author": {
-        "name": "DigitalKrony",
-        "email": "chiefspork@gmail.com",
-        "url": "http://funedikly.com"
-    },
-    "_npmUser": {
-        "name": "DigitalKrony",
-        "email": "chiefspork@gmail.com"
-    },
-    "main": "./lib/index.js",
-    "license": "MIT",
-    "readmeFilename": "readme.md",
-    "repository": {
-        "type": "git",
-        "url": "https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold"
-    },
-    "scripts": {
-        "start": "node ./bin/cli.js",
-        "test": "cd ./test && scaffold"
-    },
-    "dependencies": {
-        "chalk": "^2.4.2",
-        "glob": "^7.1.5",
-        "inquirer": "^6.3.1",
-        "js-yaml": "^3.13.1"
-    },
-    "directories": {
-        "bin": "./bin"
-    },
-    "bin": {
-        "scaffold": "./bin/cli.js"
-    }
+  "name": "component_scaffold",
+  "description": "Will build a folder and file structure that fits your requirements.",
+  "version": "0.6.0",
+  "keywords": [
+    "scaffold",
+    "cli",
+    "react",
+    "angular",
+    "vue",
+    "javascript"
+  ],
+  "author": {
+    "name": "DigitalKrony",
+    "email": "chiefspork@gmail.com",
+    "url": "http://funedikly.com"
+  },
+  "_npmUser": {
+    "name": "DigitalKrony",
+    "email": "chiefspork@gmail.com"
+  },
+  "main": "./lib/index.js",
+  "license": "MIT",
+  "readmeFilename": "readme.md",
+  "repository": {
+    "type": "git",
+    "url": "https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold"
+  },
+  "scripts": {
+    "start": "node ./bin/cli.js",
+    "test": "cd ./test && scaffold"
+  },
+  "dependencies": {
+    "chalk": "^2.4.2",
+    "glob": "^7.1.5",
+    "inquirer": "^6.3.1",
+    "js-yaml": "^3.13.1",
+    "prettier": "^1.19.1"
+  },
+  "directories": {
+    "bin": "./bin"
+  },
+  "bin": {
+    "scaffold": "./bin/cli.js"
+  }
 }
