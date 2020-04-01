@@ -1,0 +1,16 @@
+{
+  "editor.tabSize": 2,
+  "prettier.printWidth": 120,
+  "prettier.singleQuote": true,
+  "prettier.insertPragma": true,
+  "prettier.jsxSingleQuote": true,
+  "[typescript]": {
+    "editor.formatOnSave": true,
+  },
+  "[typescriptreact]": {
+    "editor.formatOnSave": true,
+  },
+  "[javascript]": {
+    "editor.formatOnSave": true,
+  }
+}
