@@ -38,7 +38,7 @@
     "inquirer": "^7.0.5",
     "js-yaml": "^3.13.1",
     "prettier": "^1.19.1",
-    "snyk": "^1.465.0"
+    "snyk": "^1.685.0"
   },
   "directories": {
     "bin": "./bin"
