@@ -46,5 +46,6 @@
   "bin": {
     "scaffold": "./bin/cli.js"
   },
-  "snyk": true
+  "snyk": true,
+  "packageManager": "yarn@4.9.3"
 }
