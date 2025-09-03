@@ -1,7 +1,59 @@
 {
   "name": "component_scaffold",
   "description": "Will build a folder and file structure that fits your requirements.",
-  "version": "0.6.0",
+  "version": "0.7.0",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold"
+  },
+  "author": {
+    "name": "DigitalKrony",
+    "email": "adam.sivins@gmail.com",
+    "url": "http://funedikly.com"
+  },
+  "_npmUser": {
+    "name": "DigitalKrony",
+    "email": "adam.sivins@gmail.com"
+  },
+  "scripts": {
+    "start:dev": "tsc -watch",
+    "start:build": "tsc",
+    "scaffold": "node ./bin/cli.js",
+    "test": "cd ./test && scaffold",
+    "snyk-protect": "snyk protect",
+    "prepare": "npm run snyk-protect"
+  },
+  "dependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "latest",
+    "chalk": "^5.6.0",
+    "glob": "^11.0.3",
+    "inquirer": "^12.9.4",
+    "js-yaml": "^4.1.0",
+    "prettier": "^3.6.2",
+    "snyk": "^1.1299.0"
+  },
+  "type": "module",
+  "main": "./lib/index.js",
+  "module": "./lib/index.js",
+  "types": "./lib/index.d.ts",
+  "exports": {
+    ".": {
+      "require": "./lib/index.js",
+      "import": "./lib/index.js",
+      "types": "./lib/index.d.ts"
+    }
+  },
+  "files": [
+    "./lib"
+  ],
+  "directories": {
+    "bin": "./bin"
+  },
+  "bin": {
+    "scaffold": "./bin/cli.js"
+  },
   "keywords": [
     "scaffold",
     "cli",
@@ -10,42 +62,7 @@
     "vue",
     "javascript"
   ],
-  "author": {
-    "name": "DigitalKrony",
-    "email": "chiefspork@gmail.com",
-    "url": "http://funedikly.com"
-  },
-  "_npmUser": {
-    "name": "DigitalKrony",
-    "email": "chiefspork@gmail.com"
-  },
-  "main": "./lib/index.js",
-  "license": "MIT",
-  "readmeFilename": "readme.md",
-  "repository": {
-    "type": "git",
-    "url": "https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold"
-  },
-  "scripts": {
-    "start": "node ./bin/cli.js",
-    "test": "cd ./test && scaffold",
-    "snyk-protect": "snyk protect",
-    "prepare": "npm run snyk-protect"
-  },
-  "dependencies": {
-    "chalk": "^2.4.2",
-    "glob": "^7.1.5",
-    "inquirer": "^7.0.5",
-    "js-yaml": "^3.13.1",
-    "prettier": "^1.19.1",
-    "snyk": "^1.685.0"
-  },
-  "directories": {
-    "bin": "./bin"
-  },
-  "bin": {
-    "scaffold": "./bin/cli.js"
-  },
+  "readmeFilename": "README.md",
   "snyk": true,
   "packageManager": "yarn@4.9.3"
 }

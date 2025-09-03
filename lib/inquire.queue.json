@@ -1,12 +1,12 @@
 [{
-    "type": "list",
-    "name": "group",
-    "message": "What scaffold group would you like to choose?",
-    "function": "this.listGroup()"
-  },
-  {
-    "type": "input",
-    "name": "name",
-    "message": "What would you like to name this new OBJECT?\n(Must be unique to the group previously assigned.)\n"
-  }
+        "type": "list",
+        "name": "group",
+        "message": "What scaffold group would you like to choose?",
+        "function": "this.listGroup()"
+    },
+    {
+        "type": "input",
+        "name": "name",
+        "message": "What would you like to name this new OBJECT?\n(Must be unique to the group previously assigned.)\n"
+    }
 ]

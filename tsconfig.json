@@ -1,28 +1,14 @@
 {
-  "compileOnSave": true,
-  "outDir": "./lib",
+  "extends": "./config/typescript/tsconfig.json",
   "compilerOptions": {
     "outDir": "./lib",
     "rootDir": "./src",
-    "composite": true,
-    "listEmittedFiles": true,
-    "module": "commonjs",
-    "target": "es6",
-    "lib": ["dom", "es2016"],
-    "moduleResolution": "node",
-    "esModuleInterop": true,
-    "strict": true,
-    "noImplicitAny": false,
-    "checkJs": false,
-    "strictPropertyInitialization": false,
-    "removeComments": true,
-    "importHelpers": true,
-    "noImplicitReturns": true,
-    "noImplicitThis": true,
-    "skipLibCheck": true,
-    "declaration": true,
-    "declarationMap": true
+    "baseUrl": "./src/",
+    "paths": {
+      "@/*": ["./*"]
+    }
   },
-  "exclude": ["node_modules", "lib", "lib-cjs"],
-  "include": ["./src/**/*"],
+  "typeRoots": ["node_modules/@types"],
+  "include": ["./src/**/*", "./src/**/*.json"],
+  "exclude": ["lib", "lib-cjs", "node_modules"]
 }

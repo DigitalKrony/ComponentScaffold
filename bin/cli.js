@@ -1,7 +1,7 @@
 #!/usr/bin/env node
+import ComponentScaffold from './../lib/scaffold.js';
 
-const scaffold = require('../lib/index.js');
+const [, , ...args] = process.argv;
 
-const [,, ...args] = process.argv;
-
-new scaffold(args);
+new ComponentScaffold(args);
+// scaffold();

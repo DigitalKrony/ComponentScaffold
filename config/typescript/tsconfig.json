@@ -1,0 +1,27 @@
+{
+    "compilerOptions": {
+      "module": "ESNext",
+      "target": "ES2020",
+
+      "moduleResolution": "node",
+      "useDefineForClassFields": true,
+      "experimentalDecorators": true,
+      "resolveJsonModule": true,
+      "isolatedModules": true,
+      "declarationMap": true,
+      "importHelpers": true,
+      "declaration": true,
+      "composite": false,
+      "sourceMap": true,
+      "allowJs": true,
+
+      "skipLibCheck": true,
+      "esModuleInterop": true,
+      "allowSyntheticDefaultImports": true,
+      "forceConsistentCasingInFileNames": true,
+      "noFallthroughCasesInSwitch": true,
+      "noUnusedParameters": true,
+      "noUnusedLocals": true,
+      "strict": true,
+    }
+  }
