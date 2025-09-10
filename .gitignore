@@ -27,6 +27,7 @@ yarn-error.log*
 .vscode/chrome
 .babel-cache-shell
 .temp
+.obsidian/
 
 tsconfig.tsbuildinfo
 npm-debug.log*
@@ -44,3 +45,6 @@ undefined
 .temp
 _tmp
 _temp
+
+# ignore files generated as a development test
+*/components

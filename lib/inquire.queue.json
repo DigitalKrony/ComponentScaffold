@@ -1,12 +1,40 @@
-[{
-        "type": "list",
-        "name": "group",
-        "message": "What scaffold group would you like to choose?",
-        "function": "this.listGroup()"
-    },
-    {
-        "type": "input",
-        "name": "name",
-        "message": "What would you like to name this new OBJECT?\n(Must be unique to the group previously assigned.)\n"
-    }
-]
+{
+    "actions": [
+        {
+            "type": "list",
+            "name": "action",
+            "message": "What action would you like to perform?",
+            "choices": [
+                { "name": "Create new component", "value": "create" },
+                { "name": "Extend existing component", "value": "extend" }
+            ]
+        }
+    ],
+    "extend": [
+        {
+            "type": "list",
+            "name": "feature",
+            "message": "Which feature would you like to extend?",
+            "function": "this.listFeatures()"
+        },
+        {
+            "type": "list",
+            "name": "extend",
+            "message": "What would you like to extend this component with?",
+            "function": "this.listExtensions()"
+        }
+    ],
+    "create": [
+        {
+            "type": "list",
+            "name": "group",
+            "message": "What scaffold group would you like to choose?",
+            "function": "this.listGroup()"
+        },
+        {
+            "type": "input",
+            "name": "name",
+            "message": "What would you like to name this new OBJECT?\n(Must be unique to the group previously assigned.)\n"
+        }
+    ]
+}

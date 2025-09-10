@@ -1,5 +1,5 @@
 - dest: ./src/
-  friendlyName: YAML Test 1
+  friendlyName: YML Test 1
   nameCase: pascal
   structure:
     - type: file
@@ -13,7 +13,7 @@
       content: console.log('Hello world!')
 
 - dest: ./src/
-  friendlyName: YAML Test 2
+  friendlyName: YML Test 2
   nameCase: pascal
   structure:
     - type: file

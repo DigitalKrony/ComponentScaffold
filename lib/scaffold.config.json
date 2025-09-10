@@ -1,14 +1,46 @@
-[
-    {
-        "dest": "./src/components/",
-        "friendlyName": "Component",
-        "structure": [
-            {
-                "type": "file",
-                "name": "index",
-                "extension": "js",
-                "content": ""
-            }
-        ]
-    }
-]
+{
+    "extend": [
+        {
+            "dir": "./src/components/",
+            "friendlyName": "Component Test",
+            "nameCase": "kebab",
+            "structure": [
+                {
+                    "type": "folder",
+                    "name": "__dir_test__",
+                    "content": [{
+                            "type": "file",
+                            "name": "index",
+                            "extension": "js",
+                            "content": "// Test File"
+                        }]
+                }
+            ]
+        }
+    ],
+    "create": [
+        {
+            "dest": "./src/components/",
+            "friendlyName": "Function Component",
+            "structure": [
+                {
+                    "type": "file",
+                    "name": "index",
+                    "extension": "js",
+                    "content": "// Functional Component || %name.pascal%"
+                }
+            ]
+        }, {
+            "dest": "./src/components/",
+            "friendlyName": "Class Component",
+            "structure": [
+                {
+                    "type": "file",
+                    "name": "index",
+                    "extension": "js",
+                    "content": "// Class Component || %name.pascal%"
+                }
+            ]
+        }
+    ]
+}

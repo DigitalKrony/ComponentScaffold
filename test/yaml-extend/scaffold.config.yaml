@@ -1,0 +1,51 @@
+extend:
+  - dir: ./src
+    friendlyName: Feature Test 1
+    nameCase: kabab
+    structure:
+      - type: folder
+        name: __dir_test__
+        content:
+        - type: file
+          name: index
+          extension: js
+          content: // Test File
+  - dir: ./src
+    friendlyName: Feature Test 2
+    nameCase: kabab
+    structure:
+      - type: folder
+        name: __dir_test__
+        content:
+        - type: file
+          name: index
+          extension: js
+          content: // Test File
+
+create:
+  - dest: ./src/
+    friendlyName: YAML Test 1
+    nameCase: pascal
+    structure:
+      - type: file
+        name: index
+        extension: js
+        content: const test = require('./script_%name.pascal%_test');
+      - type: file
+        prefix: script_
+        suffix: _test
+        extension: js
+        content: console.log('Hello world!')
+  - dest: ./src/
+    friendlyName: YAML Test 2
+    nameCase: pascal
+    structure:
+      - type: file
+        name: index
+        extension: js
+        content: const test = require('./script_%name.pascal%_test');
+      - type: file
+        prefix: script_
+        suffix: _test
+        extension: js
+        content: console.log('Hello world!')

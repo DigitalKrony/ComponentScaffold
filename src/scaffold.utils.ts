@@ -10,11 +10,17 @@ export const getNode = function (data: any[], value: any, node: any) {
   return;
 };
 
-export const createCase = function (string: string, type: Case) {
+export const uncase = (string: string) => {
+  let toReturn = string.replace(/([a-z])([A-Z])/g, '$1 $2').replace(/[\-\_](\w)/g, ` $1`);
+  // toReturn = toReturn;
+  return toReturn.toLowerCase().trim();
+}
+// TODO: Create pre function that "uncases" the string to a standard format before applying case
+export const createCase = (string: string, type: Case) => {
   switch (type) {
     case Case.Snake:
       return string.toLowerCase().replace(/[\s\.\-]/g, '_');
-    case Case.Hyphen:
+    case Case.Kebab:
       return string.toLowerCase().replace(/[\s\.\_]/g, '-');
     case Case.Camel:
       let toReturn = string.replace(/^([A-Z]|[a-z])|[\s\.\-\_](\w)/g, function (data) {
@@ -39,10 +45,10 @@ export const createCase = function (string: string, type: Case) {
   }
 };
 
-export const caseGroup = function (string: string) {
+export const caseGroup = (string: string) => {
   return {
     snake: createCase(string, Case.Snake),
-    hyphen: createCase(string, Case.Hyphen),
+    kebab: createCase(string, Case.Kebab),
     camel: createCase(string, Case.Camel),
     pascal: createCase(string, Case.Pascal),
     original: string

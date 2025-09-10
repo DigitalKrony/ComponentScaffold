@@ -1,7 +1,7 @@
 {
   "name": "component_scaffold",
   "description": "Will build a folder and file structure that fits your requirements.",
-  "version": "0.7.0",
+  "version": "0.8.0",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -17,10 +17,10 @@
     "email": "adam.sivins@gmail.com"
   },
   "scripts": {
-    "start:dev": "tsc -watch",
+    "start:dev": "tsc --project tsconfig.dev.json -watch",
     "start:build": "tsc",
     "scaffold": "node ./bin/cli.js",
-    "test": "cd ./test && scaffold",
+    "test": "cd ./test/json-extend && scaffold && cd ./../yaml && scaffold && cd ./../yml && scaffold && cd ./../json-extend && scaffold && cd ./../yaml-extend && scaffold",
     "snyk-protect": "snyk protect",
     "prepare": "npm run snyk-protect"
   },
