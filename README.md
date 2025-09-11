@@ -13,7 +13,7 @@ yarn global add component_scaffold
 
 Running the CLI:
 ``` shell
-scaffolds
+scaffold
 ```
 
 ## Configuration
