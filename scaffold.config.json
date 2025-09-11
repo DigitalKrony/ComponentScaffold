@@ -47,6 +47,10 @@
           "type": "file",
           "name": "index",
           "extension": "js",
+          "content": "// Functional Component || index for %name.kebab%"
+        }, {
+          "type": "file",
+          "extension": "js",
           "content": "// Functional Component || %name.pascal%"
         }
       ]

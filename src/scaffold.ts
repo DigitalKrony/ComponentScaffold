@@ -39,13 +39,11 @@ export default class ComponentScaffold<ComponentScaffoldProps> {
       this._askQuestions();
     }
 
-    /*
-      // Graceful exit handling
-      process.on('uncaughtException', (reason, promise) => {
-        if (reason instanceof Error && reason.name === 'ExitPromptError') console.log(chalk.yellow('Closed by user.'));
-        else console.error(chalk.red(`Uncaught Exception: ${promise}`), '\n', chalk.white(`Reason: ${reason}`));
-      });
-    */
+    // Graceful exit handling
+    process.on('uncaughtException', (reason, promise) => {
+      if (reason instanceof Error && reason.name === 'ExitPromptError') console.log(chalk.yellow('Closed by user.'));
+      else console.error(chalk.red(`Uncaught Exception: ${promise}`), '\n', chalk.white(`Reason: ${reason}`));
+    });
   }
 
   public listGroup = () => {
@@ -191,12 +189,13 @@ export default class ComponentScaffold<ComponentScaffoldProps> {
   };
 
   private _parseStructure = (json: any, root: any) => {
-    for (var i = 0; i < json.length; i++) {
+    for (let i = 0; i < json.length; i++) {
       const thisObj = json[i];
 
       switch (thisObj.type) {
         case 'file':
-          var nameConcat = '';
+          let nameConcat = '';
+
           if (thisObj.prefix) {
             nameConcat = thisObj.prefix;
           }
@@ -218,24 +217,24 @@ export default class ComponentScaffold<ComponentScaffoldProps> {
             nameConcat = nameConcat + thisObj.suffix;
           }
 
-          const fileSrc = `${root}/${nameConcat}.${thisObj.extension}`.trim()
+          const fileSrc = `${root}/${nameConcat}.${thisObj.extension}`.trim();
 
           if (!existsSync(fileSrc)) {
             if (!existsSync(root)) {
               mkdirSync(`${root}`, {
                 recursive: true
               });
-
-              writeFile(
-                fileSrc,
-                this._replaceTokens(thisObj.content),
-                err => {
-                  if (err) {
-                    console.log(chalk.red(`${err}`));
-                  }
-                }
-              )
             }
+
+            writeFile(
+              fileSrc,
+              this._replaceTokens(thisObj.content),
+              err => {
+                if (err) {
+                  console.log(chalk.red(`${err}`));
+                }
+              }
+            )
           } else {
             console.log(chalk.yellow(`Skipping ${fileSrc}`), chalk.yellow(`File already exists.`));
           }
