@@ -1,18 +1,20 @@
 # Component Scaffold
 
-
-[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fdev.azure.com%2FDesignFunedikly%2Fbf48eec6-250a-4835-9fa5-0214e950e0d1%2F_apis%2Fgit%2Frepositories%2Fe6f14d10-8b0f-4cc8-9b6c-0b02f2280ed9%2Fitems%3Fpath%3D%2Fpackage.json%26versionDescriptor%255BversionOptions%255D%3D0%26versionDescriptor%255BversionType%255D%3D0%26versionDescriptor%255Bversion%255D%3Dmaster%26resolveLfs%3Dtrue%26%2524format%3DoctetStream%26api-version%3D5.0%26download%3Dtrue&query=%24.version&label=Version&color=blue&link=https%3A%2F%2Fdev.azure.com%2FDesignFunedikly%2FOpenSource%2F_git%2FComponentScaffold%3Fpath%3D%252Fpackage.json)](https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) [![license](https://img.shields.io/badge/license-MIT-blue?style=flat)](https://dev.azure.com/DesignFunedikly/OpenSource/_git/ComponentScaffold?path=%2Flicenses.md) [![Known Vulnerabilities](https://snyk.io/advisor/npm-package/component_scaffold/badge.svg)](https://snyk.io/advisor/npm-package/component_scaffold)
-
+[![Dynamic JSON Badge](https://img.shields.io/badge/dynamic/json?url=https%3A%2F%2Fraw.githubusercontent.com%2FDigitalKrony%2FComponentScaffold%2Frefs%2Fheads%2Fmaster%2Fpackage.json&query=version&label=Version)](https://www.npmjs.com/package/component_scaffold) [![code style: prettier](https://img.shields.io/badge/code_style-prettier-ff69b4.svg?style=flat)](https://github.com/prettier/prettier) [![license](https://img.shields.io/badge/license-MIT-blue?style=flat)](https://github.com/DigitalKrony/ComponentScaffold/blob/master/licenses.md) [![Known Vulnerabilities](https://snyk.io/advisor/npm-package/component_scaffold/badge.svg)](https://snyk.io/advisor/npm-package/component_scaffold)
 
 ## Installation
 
-Using npm:
+Install:
+``` shell
+npm i -g component_scaffold
 
-    npm i -g component_scaffold
+yarn global add component_scaffold
+```
 
 Running the CLI:
-
-    scaffold
+``` shell
+scaffolds
+```
 
 ## Configuration
 
