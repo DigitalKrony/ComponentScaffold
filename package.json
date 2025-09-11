@@ -1,7 +1,7 @@
 {
   "name": "component_scaffold",
   "description": "Will build a folder and file structure that fits your requirements.",
-  "version": "0.8.0",
+  "version": "0.8.1",
   "license": "MIT",
   "repository": {
     "type": "git",
@@ -25,14 +25,17 @@
     "prepare": "npm run snyk-protect"
   },
   "dependencies": {
-    "@types/js-yaml": "^4.0.9",
-    "@types/node": "latest",
     "chalk": "^5.6.0",
     "glob": "^11.0.3",
     "inquirer": "^12.9.4",
     "js-yaml": "^4.1.0",
-    "prettier": "^3.6.2",
-    "snyk": "^1.1299.0"
+    "prettier": "^3.6.2"
+  },
+  "devDependencies": {
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "latest",
+    "snyk": "^1.1299.0",
+    "typescript": "^5.2.2"
   },
   "type": "module",
   "main": "./lib/index.js",
@@ -62,7 +65,7 @@
     "vue",
     "javascript"
   ],
-  "readmeFilename": "README.md",
   "snyk": true,
+  "readmeFilename": "README.md",
   "packageManager": "yarn@4.9.3"
 }
